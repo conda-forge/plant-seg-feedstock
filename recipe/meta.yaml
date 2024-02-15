@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.5" %}
 
 package:
   name: plant-seg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/hci-unihd/plant-seg/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ef16608ae4e24602c92b71c1db960f33e5f4378dd0316261b0fdc7916805c619
+  sha256: 6befa9e8e3b88f430b53e986c17832e3feb70210b07f79ff02684e2a1a158033
 
 build:
   noarch: python
