@@ -53,7 +53,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  doc_url: https://github.com/hci-unihd/plant-seg/wiki
+  doc_url: https://hci-unihd.github.io/plant-seg
   dev_url: https://github.com/hci-unihd/plant-seg
 
 extra:
