@@ -11,7 +11,7 @@ Summary: Cell instance segmentation in densely packed 3D volumetric images
 
 Development: https://github.com/hci-unihd/plant-seg
 
-Documentation: https://github.com/hci-unihd/plant-seg/wiki
+Documentation: https://hci-unihd.github.io/plant-seg
 
 PlantSeg is a tool for cell instance aware segmentation in densely packed 3D volumetric images.
 The pipeline uses a two stage segmentation strategy (Neural Network + Graph Partitioning).
