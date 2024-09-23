@@ -1,12 +1,12 @@
-{% set version = "1.8.1" %}
+{% set version = "2.0.0a0" %}
 
 package:
   name: plant-seg
   version: {{ version }}
 
 source:
-  url: https://github.com/hci-unihd/plant-seg/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8898aa9f67e8d117123b47b31d97edd4aeb5a14549bf8e9a377a6dda9ef6a425
+  url: https://github.com/kreshuklab/plant-seg/archive/refs/tags/{{ version }}.tar.gz
+  sha256: a9b2312779864a002f364ee905b2e7adb1eb4e7acc570445453506fe869233ca
 
 build:
   noarch: python
@@ -19,42 +19,42 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools  # Added to specify the build backend
 
   run:
     - python >=3.9
+    - pytorch >=1.7.0
+    - tifffile
     - h5py
     - zarr
-    - requests
-    - pyyaml
-    - scikit-image
-    - tifffile
     - vigra
     - python-elf
+    - python-graphviz
+    - scikit-image
+    - bioimageio.core >=0.6.5
     - napari
     - pyqt
-    - python-graphviz
-  run_constrained:
-    - pytorch >=1.7.0
+    - requests
+    - pyyaml
+    - pydantic >2
 
 test:
   imports:
     - plantseg
-    - plantseg.legacy_gui
-    - plantseg.segmentation
 
 about:
-  home: https://github.com/hci-unihd/plant-seg
+  home: https://kreshuklab.github.io/plant-seg/
   summary: 'Cell instance segmentation in densely packed 3D volumetric images'
   description: |
-    PlantSeg is a tool for cell instance aware segmentation in densely packed 3D volumetric images. 
-    The pipeline uses a two stage segmentation strategy (Neural Network + Graph Partitioning). 
-    The pipeline is tuned for plant cell tissue acquired with confocal and light sheet microscopy. 
+    PlantSeg is a tool for cell instance aware segmentation in densely packed 3D volumetric images.
+    The pipeline uses a two stage segmentation strategy (Neural Network + Graph Partitioning).
+    The pipeline is tuned for plant cell tissue acquired with confocal and light sheet microscopy.
     Pre-trained models are provided.
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  doc_url: https://hci-unihd.github.io/plant-seg
-  dev_url: https://github.com/hci-unihd/plant-seg
+  doc_url: https://kreshuklab.github.io/plant-seg/
+  dev_url: https://github.com/kreshuklab/plant-seg
 
 extra:
   recipe-maintainers:
