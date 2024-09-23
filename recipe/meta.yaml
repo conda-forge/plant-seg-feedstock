@@ -16,7 +16,7 @@ build:
     - plantseg = plantseg.run_plantseg:main
 
 requirements:
-  build:
+  host:
     - python >=3.9
     - pip
 
@@ -40,10 +40,6 @@ requirements:
 test:
   imports:
     - plantseg
-  requires:
-    - pytest
-  run:
-    - pytest
 
 about:
   home: https://kreshuklab.github.io/plant-seg/
