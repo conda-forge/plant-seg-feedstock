@@ -17,12 +17,12 @@ build:
 
 requirements:
   build:
-    - python>=3.9
+    - python >=3.9
     - pip
 
   run:
-    - python
-    - pytorch
+    - python >=3.9
+    - pytorch >=1.7.0
     - tifffile
     - h5py
     - zarr
@@ -30,11 +30,12 @@ requirements:
     - python-elf
     - python-graphviz
     - scikit-image
-    - bioimageio.core>=0.6.5
+    - bioimageio.core >=0.6.5
     - napari
+    - pyqt
     - requests
     - pyyaml
-    - pydantic>2
+    - pydantic >2
 
 test:
   imports:
