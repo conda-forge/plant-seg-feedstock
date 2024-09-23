@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools  # Added to specify the build backend
 
   run:
     - python >=3.9
