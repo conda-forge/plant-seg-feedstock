@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kreshuklab/plant-seg/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+  sha256: 4fdd5554cd309541ff7c0681cf575d9e97b34c1015ca149ae949fe286bb7e49a
 
 build:
   noarch: python
