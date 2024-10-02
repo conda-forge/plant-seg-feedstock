@@ -1,4 +1,4 @@
-{% set version = "2.0.0a2" %}
+{% set version = "2.0.0a3" %}
 
 package:
   name: plant-seg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kreshuklab/plant-seg/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0e4cbe7bac6f1eb4a1f62559d60c22a871037180164e8b45e393068255d7a90d
+  sha256: 4fdd5554cd309541ff7c0681cf575d9e97b34c1015ca149ae949fe286bb7e49a
 
 build:
   noarch: python
