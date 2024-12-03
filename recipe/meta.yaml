@@ -1,6 +1,6 @@
 {% set PYTHON_MIN = "3.9" %}
-{% set VERSION = "2.0.0a7" %}
-{% set SHA256 = "7dc99673c792d540b7285901512f278c493b60b31d1945dd15a20df3935888eb" %}
+{% set VERSION = "2.0.0a8" %}
+{% set SHA256 = "45ae2073ea560326fa4d9a5079b212058667abd5aed817f8e7fa91bf227a04e3" %}
 # curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0a4.tar.gz | openssl sha256
 
 package:
@@ -39,7 +39,7 @@ requirements:
     - pyqt
     - requests
     - pyyaml
-    - pydantic >2
+    - pydantic >2,<2.10
 
 test:
   imports:
