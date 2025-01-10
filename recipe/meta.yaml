@@ -14,18 +14,18 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --ignore-installed --no-cache-dir
-  number: 0
+  number: 1
   entry_points:
     - plantseg = plantseg.run_plantseg:main
 
 requirements:
   host:
-    - python {{ PYTHON_MIN }}
+    - python {{ python_min }}
     - pip
     - setuptools  # Added to specify the build backend
 
   run:
-    - python >={{ PYTHON_MIN }}
+    - python >={{ python_min }}
     - pytorch >=1.7.0
     - tifffile
     - h5py
@@ -42,6 +42,8 @@ requirements:
     - pydantic >2,<2.10
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - plantseg
 
