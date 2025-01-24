@@ -3,23 +3,25 @@ About plant-seg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plant-seg-feedstock/blob/main/LICENSE.txt)
 
-Home: <https://github.com/kreshuklab/plant-seg>
+Home: https://kreshuklab.github.io/plant-seg/
 
 Package license: MIT
 
 Summary: Cell instance segmentation in densely packed 3D volumetric images
 
-Development: <https://github.com/kreshuklab/plant-seg>
+Development: https://github.com/kreshuklab/plant-seg
 
-Documentation: <https://kreshuklab.github.io/plant-seg>
+Documentation: https://kreshuklab.github.io/plant-seg/
 
 PlantSeg is a tool for cell instance aware segmentation in densely packed 3D volumetric images.
 The pipeline uses a two stage segmentation strategy (Neural Network + Graph Partitioning).
 The pipeline is tuned for plant cell tissue acquired with confocal and light sheet microscopy.
 Pre-trained models are provided.
 
+
 Current build status
 ====================
+
 
 <table><tr><td>All platforms:</td>
     <td>
@@ -33,8 +35,8 @@ Current build status
 Current release info
 ====================
 
-| Name                                                                                                                    | Downloads                                                                                                                   | Version                                                                                                                   | Platforms                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-plant--seg-green.svg)](https://anaconda.org/conda-forge/plant-seg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/plant-seg.svg)](https://anaconda.org/conda-forge/plant-seg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/plant-seg.svg)](https://anaconda.org/conda-forge/plant-seg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/plant-seg.svg)](https://anaconda.org/conda-forge/plant-seg) |
 
 Installing plant-seg
@@ -84,6 +86,7 @@ mamba repoquery whoneeds plant-seg --channel conda-forge
 mamba repoquery depends plant-seg --channel conda-forge
 ```
 
+
 About conda-forge
 =================
 
@@ -124,6 +127,7 @@ Terminology
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
 
+
 Updating plant-seg-feedstock
 ============================
 
@@ -140,10 +144,9 @@ on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
-
-* If the version of a package **is not** being increased, please add or increase
+ * If the version of a package **is not** being increased, please add or increase
    the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
-* If the version of a package **is** being increased, please remember to return
+ * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
@@ -153,3 +156,4 @@ Feedstock Maintainers
 * [@lorenzocerrone](https://github.com/lorenzocerrone/)
 * [@qin-yu](https://github.com/qin-yu/)
 * [@wolny](https://github.com/wolny/)
+
