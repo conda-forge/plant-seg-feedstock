@@ -1,6 +1,6 @@
 {% set PYTHON_MIN = "3.9" %}
-{% set VERSION = "2.0.0b2" %}
-{% set SHA256 = "02e00c501938f652d9d3464e65bde4d248f9851f1789db4d3c5a21338fe67af1" %}
+{% set VERSION = "2.0.0b3" %}
+{% set SHA256 = "6e81be1ea70d793459101f6b7219b009dd2559472bf3870f1b114ae5de11a072" %}
 # curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0a4.tar.gz | openssl sha256
 
 package:
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --ignore-installed --no-cache-dir
-  number: 1
+  number: 0
   entry_points:
     - plantseg = plantseg.run_plantseg:main
 
