@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --ignore-installed --no-cache-dir
-  number: 1
+  number: 0
   entry_points:
     - plantseg = plantseg.run_plantseg:main
 
