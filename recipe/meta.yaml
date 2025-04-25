@@ -37,7 +37,7 @@ requirements:
     - setuptools
 
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - pip
     - pytorch
     - tifffile
