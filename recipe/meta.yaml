@@ -32,12 +32,12 @@ build:
 
 requirements:
   build:
-    - python {{ python_min }}
+    - python {{ PYTHON_MIN }}
     - pip
     - setuptools
 
   run:
-    - python >={{ python_min }}
+    - python >={{ PYTHON_MIN }}
     - pip
     - pytorch
     - tifffile
@@ -58,7 +58,7 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python {{ PYTHON_MIN }}
   imports:
     - plantseg
 
