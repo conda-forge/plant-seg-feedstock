@@ -42,13 +42,13 @@ requirements:
     - python-elf
     - python-graphviz
     - scikit-image
-    - bioimageio.core>=0.8.0
+    - bioimageio.core >=0.8.0
     - qtpy
     - pyqt
     - napari
     - requests
     - pyyaml
-    - pydantic>2
+    - pydantic >2
 
 test:
   requires:
