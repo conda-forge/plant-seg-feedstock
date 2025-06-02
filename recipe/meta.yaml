@@ -46,6 +46,7 @@ requirements:
     - qtpy
     - pyqt
     - napari
+    - qt-material
     - requests
     - pyyaml
     - pydantic >2
