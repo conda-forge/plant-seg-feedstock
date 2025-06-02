@@ -1,7 +1,7 @@
 {% set PYTHON_MIN = "3.11" %}
-{% set VERSION = "2.0.0b4" %}
-{% set SHA256 = "a476c08a46b3399396df5e0d6f95fbcba54269df853b0f647bf1ea6c217015fb" %}
-# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0a4.tar.gz | openssl sha256
+{% set VERSION = "2.0.0b5" %}
+{% set SHA256 = "f1e0720d09416a0e256acd5bb36d217b71359fd19c8f68487567966f3e2f76c3" %}
+# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0a5.tar.gz | openssl sha256
 
 package:
   name: plant-seg
@@ -42,14 +42,13 @@ requirements:
     - python-elf
     - python-graphviz
     - scikit-image
-    - bioimageio.core >=0.6.5,<=0.7.0
-    - xarray <2025.3.0 # 2025.3.0 cause problem plant-seg/issues/396
+    - bioimageio.core >= 0.8.0
     - qtpy
     - pyqt
     - napari
     - requests
     - pyyaml
-    - pydantic >2,<2.10 # 2.10 cause problem spec-bioimage-io/issues/663
+    - pydantic > 2
 
 test:
   requires:
