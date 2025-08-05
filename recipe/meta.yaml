@@ -1,6 +1,6 @@
 {% set PYTHON_MIN = "3.11" %}
-{% set VERSION = "2.0.0b9" %}
-{% set SHA256 = "8e6cdc97855b346506b8868f80deecde27ecc8aedf026c070fe1e0e757264dca" %}
+{% set VERSION = "2.0.0b11" %}
+{% set SHA256 = "457eea98e23b209f1400d30a8ea2163ddb9de6e04a66986ec9f08d02d3d5abb0" %}
 # curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0b9.tar.gz | openssl sha256
 
 package:
@@ -35,6 +35,7 @@ requirements:
     - python >={{ PYTHON_MIN }}
     - pip
     - pytorch
+    - tensorboard
     - tifffile
     - h5py
     - zarr
