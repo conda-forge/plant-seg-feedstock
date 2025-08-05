@@ -35,6 +35,7 @@ requirements:
     - python >={{ PYTHON_MIN }}
     - pip
     - pytorch
+    - tensorboard
     - tifffile
     - h5py
     - zarr
