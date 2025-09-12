@@ -1,7 +1,7 @@
 {% set PYTHON_MIN = "3.11" %}
-{% set VERSION = "2.0.0rc0" %}
-{% set SHA256 = "2323a0d840cbe04c426a2330c33bd1b9462542219b0951047a2759ba24795539" %}
-# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0b9.tar.gz | openssl sha256
+{% set VERSION = "2.0.0rc1" %}
+{% set SHA256 = "5af400d434fb582aa4fb22e2a67b4b30a2e64f3c6ddf0960266ec989cf6fc2e6" %}
+# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0rc1.tar.gz | openssl sha256
 
 package:
   name: plant-seg
@@ -19,6 +19,7 @@ build:
     - "mkdir -p {{ PREFIX }}/Menu"  # [not win]
     - "cp {{ SRC_DIR }}/Menu/plant-seg.json {{ PREFIX }}/Menu/{{ PKG_NAME }}_menu.json"  # [not win]
     - "cp {{ SRC_DIR }}/Menu/icon.png {{ PREFIX }}/Menu/icon.png"  # [not win]
+    - "cp {{ SRC_DIR }}/Menu/icon.ico {{ PREFIX }}/Menu/icon.ico"  # [not win]
     - "cp {{ SRC_DIR }}/Menu/logo_horizontal.png {{ PREFIX }}/Menu/logo_horizontal.png"  # [not win]
     - "cp {{ SRC_DIR }}/Menu/logo_vertical.png {{ PREFIX }}/Menu/logo_vertical.png"  # [not win]
 
