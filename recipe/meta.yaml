@@ -1,7 +1,7 @@
 {% set PYTHON_MIN = "3.11" %}
-{% set VERSION = "2.0.0rc1" %}
-{% set SHA256 = "5af400d434fb582aa4fb22e2a67b4b30a2e64f3c6ddf0960266ec989cf6fc2e6" %}
-# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0rc1.tar.gz | openssl sha256
+{% set VERSION = "2.0.0rc2" %}
+{% set SHA256 = "2a2c3293f8d78533dd40c34d3739baf64fcc0b6325ef93ce3673703a6730ba20" %}
+# curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0b7.tar.gz | openssl sha256
 
 package:
   name: plant-seg
@@ -46,8 +46,8 @@ requirements:
     - scikit-image
     - bioimageio.core >=0.9.0
     - bioimageio.spec >=0.5.4.3
+    - pyside6
     - qtpy
-    - pyqt
     - napari
     - qt-material
     - requests
