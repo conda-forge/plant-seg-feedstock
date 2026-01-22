@@ -1,6 +1,6 @@
 {% set PYTHON_MIN = "3.11" %}
-{% set VERSION = "2.0.0rc11" %}
-{% set SHA256 = "fbc77d115f41d8a4c841f01acdf93285311cd36113713ef7f8e0f824977b5792" %}
+{% set VERSION = "2.0.0rc12" %}
+{% set SHA256 = "f1bbce79e76c9be38e81ed5e62e622fccf8029428e2f0016abc25d0318af18fb" %}
 # curl -sL https://github.com/kreshuklab/plant-seg/archive/refs/tags/2.0.0rc11.tar.gz | openssl sha256
 
 package:
